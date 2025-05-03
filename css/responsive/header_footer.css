@@ -1,0 +1,46 @@
+@media screen and (max-width: 1350px) {
+    header form div {
+        width: 300px;
+    }
+
+    header form div input[type="text"] {
+        width: 225px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    header form div {
+        width: 200px;
+    }
+
+    header form div input[type="text"] {
+        width: 135px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    header form div {
+        width: 150px;
+    }
+
+    header form div input[type="text"] {
+        width: 75px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    header form div,
+    header .container .menu a,
+    header .container .icons {
+        display: none;
+    }
+
+    header .container .burger .menu-burger {
+        display: block;
+        
+    }
+
+    header > .container {
+        padding: 22px 40px;
+    }
+}
