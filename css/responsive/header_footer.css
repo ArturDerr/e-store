@@ -6,6 +6,10 @@
     header form div input[type="text"] {
         width: 225px;
     }
+
+    footer .left nav a {
+        width: 215.5px;
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -15,6 +19,18 @@
 
     header form div input[type="text"] {
         width: 135px;
+    }
+
+    footer .left nav a {
+        width: 155.5px;
+    }
+
+    footer .left .right{
+        width: 255.5px;
+    }
+
+    footer .left .right .bold-text-right {
+        width: 185.5px;
     }
 }
 
@@ -26,7 +42,15 @@
     header form div input[type="text"] {
         width: 75px;
     }
+    footer .left nav,
+    footer .left .right {
+        margin-left: 110px;
+    }
+    footer .left figure figcaption {
+        width: 190px;
+    }
 }
+
 
 @media screen and (max-width: 1120px) {
     header form div,
@@ -42,5 +66,32 @@
 
     header > .container {
         padding: 22px 40px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    footer .left {
+        display: block;
+        align-items: center;
+    }
+    footer .left figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        align-self: stretch;
+        
+    }
+
+    footer .left figure figcaption {
+        color: #CFCFCF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        width: 390px;
+        margin-top: 5px;
+
     }
 }

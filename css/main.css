@@ -1,0 +1,181 @@
+.block1 .breadcrumb ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 40px 160px;
+    align-items: end;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.block1 .breadcrumb li a:not(:last-child){
+    color: #A4A4A4;
+    text-decoration: none;
+}
+
+.block1 .breadcrumb li a {
+    vertical-align: top;
+    margin: 16px;
+
+}
+
+.block1 .breadcrumb li span {
+    line-height: 2;
+}
+
+.block1 .breadcrumb li img{
+    width: 21px;
+    height: 21px;
+}
+
+.block1 .breadcrumb li {
+    color: #000000;
+    font-family: Inter;
+    font-size: 1em;
+    vertical-align: top;
+    font-style: normal;
+    font-weight: 500;
+    align-items: center;
+}
+
+.block1 .breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 0.25rem;
+  }
+
+.block2 .accordion {
+    display: flex;
+    margin: 177px;
+    margin-top: 24px; 
+    margin-bottom: 25px;
+
+}
+
+.block2 .accordion2 {
+    display: flex;
+    margin: 177px;
+    margin-top: 0px; 
+    margin-bottom: 25px;
+}
+
+.block2 .menu {
+    width: 435px;
+}
+
+.block2 .top-part {
+    margin-left: 32px;
+    display: flex;
+    float: inline-start;
+}
+
+.block2 .top-part .sort{
+    margin-left: 279px;
+    border-radius: 8px;
+    align-items: center;
+    border: 0.5px solid #D4D4D4;
+    background: #FFF;
+    display: flex;
+    flex: 1 0 0;
+    min-width: 140px;
+    max-width: 256px;
+    padding: 8px 16px;
+
+}
+
+.block2 .top-part .sort p{
+    color: #000;
+    width: 65px;
+    font-family: Inter;
+    font-size: 0.9375em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.075px;
+}
+
+.block2 .top-part .sort a{
+    margin-left: 100px;
+}
+
+.block2 {
+    justify-content: left;
+}
+.block2 .accordion2 li,
+.block2 .accordion li {
+    list-style: none;
+    flex-direction: column;
+    width: 100%;
+    width: 286px;
+}
+.block2 .accordion2 li .name label,
+.block2 .accordion li .name label {
+    display: inline-block;
+    width: 232px;
+}
+.block2 .accordion2 li .name,
+.block2 .accordion li .name {
+    width: 256px;
+    border-bottom: 1px solid #B5B5B5;
+}
+.block2 .accordion li .name .arrow img,
+.block2 .accordion2 li .name .arrow img {
+    transform: rotate(180deg);
+    width: 19px;
+    height: 19px;
+}
+
+.block2 .accordion li .content .search{
+    width: 224px;
+    height: 24px;
+    background-color: #F5F5F5;
+}
+
+.block2 .accordion li .content input{
+    border: none;
+    background-color: #F5F5F5;
+
+}
+
+.block2 .accordion li .content .search div{
+    height: 40px;
+    width: 256px;
+    background-color: #F5F5F5;
+}
+
+.block2 .accordion2 li .name,
+.block2 .accordion li .name{
+    padding: 12px 0px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: var(--Main-Black, #000);
+    font-family: Inter;
+    font-size: 1.125em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;    
+}
+.block2 .accordion li .brands,
+.block2 .accordion li .content{
+    display: none;
+    transition: max-height 0.5s;
+}
+
+.block2 .accordion li .name a:active + .brands + .content{
+    transform: rotate(0deg);
+    display: block;
+}
+
+.block3 {
+    display: inline-block;
+    margin-left: 177px;
+    margin-top: 24px; 
+    margin-bottom: 25px;
+
+}
