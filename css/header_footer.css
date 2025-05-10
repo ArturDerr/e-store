@@ -148,7 +148,7 @@ footer .left .right{
 }
 
 footer .left nav a:hover:not(.bold-text):not(.bold-text-right){
-    font-weight: 700;
+    font-weight: 400;
     color: var(--Main-White, #FFF);
 }
 

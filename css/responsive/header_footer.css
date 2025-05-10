@@ -10,6 +10,8 @@
     footer .left nav a {
         width: 215.5px;
     }
+
+    
 }
 
 @media screen and (max-width: 1280px) {
@@ -70,6 +72,9 @@
 }
 
 @media screen and (max-width: 890px) {
+    footer .left .social {
+        margin-top: 22px;
+    }
     footer .left {
         display: block;
         align-items: center;
@@ -94,4 +99,12 @@
         margin-top: 5px;
 
     }
+    footer .left nav {
+        text-align: center;
+        margin-top: 32px;
+    }
+    footer .left .right .bold-text-right {
+        margin-left: -15px;
+    }
+
 }

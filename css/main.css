@@ -18,6 +18,10 @@
     text-decoration: none;
 }
 
+.block1 {
+    margin-left: -15px;
+}
+
 .block1 .breadcrumb li a {
     vertical-align: top;
     margin: 16px;
@@ -66,31 +70,62 @@
 
 .block2 .menu {
     width: 435px;
+    margin-bottom: 850px;
 }
 
-.block2 .top-part {
-    margin-left: 32px;
+.block2 .items .top-part {
+    height: 40px;
     display: flex;
+    margin-left: 16px;
     float: inline-start;
 }
 
-.block2 .top-part .sort{
-    margin-left: 279px;
+.block2 .items .top-part .sort{
+    margin-left: 349px;
     border-radius: 8px;
     align-items: center;
     border: 0.5px solid #D4D4D4;
     background: #FFF;
     display: flex;
     flex: 1 0 0;
-    min-width: 140px;
-    max-width: 256px;
+    width: 244px;
     padding: 8px 16px;
 
 }
 
-.block2 .top-part .sort p{
+.block2 .items .top-part .sort img{
+   width: 24px;
+   margin-left: 20px;
+   height: 24px;
+   margin-top: 4px;
+}
+
+.block2 .items .top-part .products p{
+    margin-top: 10px;
+    color: #6C6C6C;
+    font-family: Inter;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+
+}
+
+.block2 .items .top-part .products p span{
     color: #000;
-    width: 65px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 80% */
+    letter-spacing: 0.6px;
+}
+
+.block2 .items .top-part .sort p{
+    color: #000;
+    width: 155px;
     font-family: Inter;
     font-size: 0.9375em;
     font-style: normal;
@@ -99,13 +134,15 @@
     letter-spacing: -0.075px;
 }
 
-.block2 .top-part .sort a{
+.block2 .items .top-part .sort a{
     margin-left: 100px;
 }
 
 .block2 {
     justify-content: left;
+    margin-left: -15px;
 }
+
 .block2 .accordion2 li,
 .block2 .accordion li {
     list-style: none;
@@ -172,10 +209,204 @@
     display: block;
 }
 
-.block3 {
-    display: inline-block;
-    margin-left: 177px;
-    margin-top: 24px; 
-    margin-bottom: 25px;
+.block2 .items .boxes .box {
+    width: 194px;
+    margin-left: 16px;
+    height: 390px;
+    padding: 24px 16px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 16px;
+    flex: 1 0 0;
+    border-radius: 9px;
+    background: #F6F6F6;
+}
 
+.block2 .items .boxes .box .top-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.block2 .items .boxes .box .top-section img {
+    width: 32px;
+    height: 32px;
+}
+
+.block2 .items .boxes .box .top-section img:hover {
+    content: url("../img/main/items/Favorite_duotone_selected.svg");
+}
+
+.block2 .items .boxes {
+    margin-top: 60px;
+    width: 790px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.block2 .items .boxes .box figure {
+    margin-top: 16px;
+    margin-left: 14px;
+}
+
+.block2 .items .boxes .box figure figcaption .main-text{
+    color: var(--Main-Black, #000);
+    text-align: center;
+    font-family: Inter;
+    font-size: 0.975em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.block2 .items .boxes .box figure figcaption .price{
+    color: var(--Main-Black, #000);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.375em;
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 100% */
+    letter-spacing: 0.72px;
+}
+
+.block2 .items .boxes .box figure figcaption {
+    margin-left: -5px;
+    margin-top: 5px;
+}
+
+.block2 .items .boxes .box figure img {
+    width: 140px;
+    height: 140px;
+    margin-left: 20px;
+}
+
+.block2 .items {
+    margin-left: 16px;
+}
+
+.block2 .items .boxes .box .button {
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    cursor: pointer;
+    margin-top: 16px;
+    margin-left: 22px;
+    width: 175px;
+    height: 48px;
+    background: var(--Main-Black, #000);
+}
+
+.block2 .items .boxes .box .button:hover{
+    border: 1px solid #000;
+    background: none;
+
+}
+
+.block2 .items .boxes .box .button:hover p {
+    color: var(--Main-Black, #000);
+    font-weight: 500;
+}
+
+.block2 .items .boxes .box .button p {
+    font-family: Inter;
+    font-size: 0.875em;
+    color: var(--Main-White, #FFF);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.block2 .items .pagination {
+    text-align: center;
+    display: flex;
+    padding-left: 270px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.block2 .items .pagination img[name="base"] {
+    margin-right: 10px;
+}
+
+.block2 .items .pagination img[name="transform"]{
+    margin-left: 10px;
+    transform: rotate(180deg);
+}
+
+.block2 .items .pagination .b {
+    margin: 0 8px;
+    padding: 4px 11px;
+    margin: 0 3px;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background: #F6F6F6;
+    cursor: pointer;
+}
+
+.block2 .items .pagination .b:hover {
+    background: #dbdbdb;
+}
+
+.block2 .items .pagination #active {
+    background: var(--Main-Black, #000);
+    cursor:auto;
+    color: #FFF;
+}
+
+.block2 .items .pagination .b p{
+    color: var(--Main-Black, #000);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.48px;
+}
+
+.container .block1 .breadcrumb .filters {
+    display: none;
+    width: 164px;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 8px;
+    border: 0.5px solid #D4D4D4;
+    background: #FFF;
+}
+.container .block1 .breadcrumb .by-rating p,
+.container .block1 .breadcrumb .filters p {
+    width: 65px;
+    color: #000;
+    font-family: Inter;
+    font-size: 0.938em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 106.667% */
+    letter-spacing: -0.075px;
+}
+.container .block1 .breadcrumb .by-rating .rat,
+.container .block1 .breadcrumb .filters .filter {
+    width: 24px;
+    height: 24px;
+}
+
+.container .block1 .breadcrumb .by-rating  {
+    display: none;
+    width: 164px;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    margin-left: 16px;
+    border-radius: 8px;
+    border: 0.5px solid #D4D4D4;
+    background: #FFF;
 }
