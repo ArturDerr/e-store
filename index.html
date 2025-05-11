@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
+    <script src="main.js"></script>
     <link rel="stylesheet" type="text/css" href="css/header_footer.css">
     <link rel="stylesheet" type="text/css" href="css/responsive/header_footer.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
     <link rel="stylesheet" type="text/css" href="css/responsive/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="popup d-flex">
+        <div class="inner-popup">
+            <p>Товар добавлен в корзину</p>
+            <div onclick="closePopup()" class="button">
+                <p>Продолжить покупки</p>
+            </div>
+        </div>
+    </div>
     <header class="container-fluid">
         <div class="container d-flex">
             <img src="../img/header/Logo.svg" alt="cyber"/>
@@ -238,7 +248,7 @@
                                     <p class="price">$1437</p>
                                 </figcaption>
                             </figure>
-                            <div class="button">
+                            <div onclick="openPopup()" class="button">
                                 <p>Buy Now</p>
                             </div>
                         </div>
@@ -253,7 +263,7 @@
                                     <p class="price">$510</p>
                                 </figcaption>
                             </figure>
-                            <div class="button">
+                            <div onclick="openPopup()" class="button">
                                 <p>Buy Now</p>
                             </div>
                         </div>
@@ -268,7 +278,7 @@
                                     <p class="price">$550</p>
                                 </figcaption>
                             </figure>
-                            <div class="button">
+                            <div onclick="openPopup()" class="button">
                                 <p>Buy Now</p>
                             </div>
                         </div>
@@ -283,7 +293,7 @@
                                     <p class="price">$1499</p>
                                 </figcaption>
                             </figure>
-                            <div class="button">
+                            <div onclick="openPopup()" class="button">
                                 <p>Buy Now</p>
                             </div>
                         </div>
@@ -298,7 +308,7 @@
                                     <p class="price">$1399</p>
                                 </figcaption>
                             </figure>
-                            <div class="button">
+                            <div onclick="openPopup()" class="button">
                                 <p>Buy Now</p>
                             </div>
                         </div>
@@ -313,7 +323,7 @@
                                     <p class="price">$1600</p>
                                 </figcaption>
                             </figure>
-                            <div class="button">
+                            <div onclick="openPopup()" class="button">
                                 <p>Buy Now</p>
                             </div>
                         </div>
@@ -328,7 +338,7 @@
                                     <p class="price">$850</p>
                                 </figcaption>
                             </figure>
-                            <div class="button">
+                            <div onclick="openPopup()" class="button">
                                 <p>Buy Now</p>
                             </div>
                         </div>
@@ -343,7 +353,7 @@
                                     <p class="price">$1399</p>
                                 </figcaption>
                             </figure>
-                            <div class="button">
+                            <div onclick="openPopup()" class="button">
                                 <p>Buy Now</p>
                             </div>
                         </div>
@@ -358,7 +368,7 @@
                                     <p class="price">$1399</p>
                                 </figcaption>
                             </figure>
-                            <div class="button">
+                            <div onclick="openPopup()" class="button">
                                 <p>Buy Now</p>
                             </div>
                         </div>
